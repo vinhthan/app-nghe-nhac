@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--2 màu đầu là màu của toolbar và thanh trạng thái của dthoai
+do vậy muốn thay đổi màu của 2 thanh này thì thay đổi bên dưới là dc-->
+<resources>
+    <color name="colorPrimary">#444b5e</color>
+    <color name="colorPrimaryDark">#444b5e</color>
+    <color name="colorAccent">#D81B60</color>
+</resources>

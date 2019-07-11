@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:weightSum="10"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+    <LinearLayout
+        android:layout_weight="7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="Suspicious0dp">
+
+        <ImageView
+            android:src="@drawable/music"
+            android:layout_width="250dp"
+            android:layout_height="250dp" />
+        <!--android:singleLine="true" (dòng đơn)-->
+        <!--android:marqueeRepeatLimit="marquee_forever" (lặp lại mãi)-->
+        <TextView
+            android:id="@+id/tvSongName"
+            android:gravity="center"
+            android:text="Song Name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:ellipsize="marquee"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:ignore="Suspicious0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_marginTop="60dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 />
+            <ImageView
+                android:id="@+id/imPlay"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/play_button"
+                android:layout_marginTop="100dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+            <ImageView
+                android:id="@+id/imPause"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/pause"
+                android:layout_marginTop="100dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+            <ImageView
+                android:id="@+id/imRewind"
+                android:src="@drawable/rewind"
+                android:layout_toLeftOf="@+id/imPlay"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="100dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+            <ImageView
+                android:id="@+id/imFast"
+                android:layout_toRightOf="@+id/imPlay"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/fast_forward"
+                android:layout_marginTop="100dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+            <ImageView
+                android:id="@+id/imList"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="7dp"
+                android:src="@drawable/list"
+                android:layout_marginTop="100dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+            <ImageView
+                android:id="@+id/imEqua"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="7dp"
+                android:src="@drawable/equalizer"
+                android:layout_marginTop="100dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+            <ImageView
+                android:id="@+id/imReplay"
+                android:src="@drawable/replay"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="7dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
